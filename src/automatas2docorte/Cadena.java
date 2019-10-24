@@ -74,7 +74,7 @@ public class Cadena {
     }
    
     
-    public void llenarLexemas(ObservableList<Cadena> listaLexemas, String identificador, String palabra){
+    public void llenarLexemas(ObservableList<Cadena> listaLexemas, String identificador, String palabra, String separador, String agrupador){
        
        
         listaLexemas.add(0, new Cadena(
@@ -87,13 +87,13 @@ public class Cadena {
        "Agrupacion",
        "( ( | ) ) ",
        "( , )  ",
-        ""
+        agrupador
         ));
         listaLexemas.add(2, new Cadena(
         "Separador",
                 "",
                 ",",
-                ""
+               separador
         ));
         listaLexemas.add(3, new Cadena(
         "Reservada",
