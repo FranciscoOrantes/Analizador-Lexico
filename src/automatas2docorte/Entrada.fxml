@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="722.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="automatas2docorte.EntradaController">
+   <children>
+      <TextArea fx:id="txtEntrada" layoutX="41.0" layoutY="44.0" prefHeight="169.0" prefWidth="666.0" style="-fx-background-color: ;" />
+      <Button fx:id="btnEntrada" layoutX="41.0" layoutY="223.0" mnemonicParsing="false" onAction="#analizador" prefHeight="34.0" prefWidth="666.0" style="-fx-background-color: green;" text="Iniciar" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tablaEntrada" layoutX="41.0" layoutY="308.0" prefHeight="263.0" prefWidth="666.0">
+        <columns>
+          <TableColumn fx:id="columnaToken" prefWidth="111.0" text="Token" />
+          <TableColumn fx:id="columnaDescripcionInformal" prefWidth="197.0" text="Descripcion informal" />
+            <TableColumn fx:id="columnaDescripcionFormal" prefWidth="202.0" text="Descripcion formal" />
+            <TableColumn fx:id="columnaLexema" prefWidth="155.0" text="Lexema" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
